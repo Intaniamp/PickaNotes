@@ -43,7 +43,7 @@ fun FolderScreen(
                 modifier = Modifier.fillMaxWidth()
             )
 
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(20.dp))
 
             folders.forEach { folder ->
                 FolderItem(
