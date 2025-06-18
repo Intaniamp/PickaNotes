@@ -56,9 +56,7 @@ fun FolderScreen(
     }
 }
 
-// Dummy implementation of FolderController for preview purposes
 class FakeFolderController : FolderController() {
-    // Override searchFolders untuk memberikan data dummy
     override fun searchFolders(query: String): List<Folder> {
         return listOf(
             Folder(id = 1, name = "Folder 1"),
@@ -67,17 +65,13 @@ class FakeFolderController : FolderController() {
         )
     }
 
-    // Override addFolder, updateFolder, and deleteFolder if needed for testing
     override fun addFolder(folder: Folder) {
-        // Implementasi dummy
     }
 
     override fun updateFolder(folder: Folder) {
-        // Implementasi dummy
     }
 
     override fun deleteFolder(folder: Folder) {
-        // Implementasi dummy
     }
 }
 
