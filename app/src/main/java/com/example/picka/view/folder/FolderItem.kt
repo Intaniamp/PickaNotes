@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.picka.model.Folder
@@ -25,8 +26,10 @@ fun FolderItem(folder: Folder, onClick: () -> Unit, onDelete: () -> Unit) {
             Text(folder.name, style = MaterialTheme.typography.titleMedium)
             Text(
                 text = "Delete",
-                color = MaterialTheme.colorScheme.error,
-                modifier = Modifier.clickable { onDelete() }
+                color = Color.Red,
+                modifier = Modifier
+                    .clickable { onDelete() }
+                    .padding(start = 160.dp)
             )
         }
     }

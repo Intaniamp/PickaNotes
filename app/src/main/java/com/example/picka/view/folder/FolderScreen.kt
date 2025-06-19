@@ -33,7 +33,7 @@ fun FolderScreen(
             .padding(padding)
             .padding(16.dp)) {
 
-            Text("Daftar Folder", style = MaterialTheme.typography.headlineMedium)
+            Text("PickaNotes", style = MaterialTheme.typography.headlineMedium)
             Spacer(modifier = Modifier.height(8.dp))
 
             OutlinedTextField(
